@@ -1,0 +1,55 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none repeat scroll 0 0 transparent;
+    color: inherit;
+    cursor: pointer;
+    outline: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  #canvas {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  select {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    height: 30px;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html,
+  body {
+    #canvas {
+    }
+
+    select {
+    }
+  }
+}

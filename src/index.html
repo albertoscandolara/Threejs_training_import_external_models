@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Import external models</title>
+    <link
+      rel="favicon"
+      type="image/svg+xml"
+      href="../static/images/logos/svg/Threejs.svg"
+    />
+    <script type="module" src="./script.mjs"></script>
+  </head>
+  <body>
+    <template id="label-section-element">
+      <div class="section-element">
+        <header class="header">
+          <span class="title"></span>
+        </header>
+        <section class="body">
+          <div class="author-section">
+            <span class="key">Author: </span>
+            <span class="value"></span>
+          </div>
+          <div class="link-section">
+            <span class="key">Link to original resource: </span>
+            <a class="value" href="" target="_blank">click here</a>
+          </div>
+        </section>
+      </div>
+    </template>
+    <select id="select"></select>
+    <canvas id="canvas"></canvas>
+    <div class="label">
+      <section class="models">
+        <header class="header">
+          <span class="title">Models</span>
+          <button class="arrow-button">
+            <div class="arrow"></div>
+          </button>
+        </header>
+        <div class="body"></div>
+      </section>
+      <section class="sounds">
+        <header class="header">
+          <span class="title">Sounds</span>
+          <button class="arrow-button">
+            <div class="arrow"></div>
+          </button>
+        </header>
+        <div class="body"></div>
+      </section>
+      <!-- <div class="header">
+        <span class="title"></span>
+        <button class="arrow-button">
+          <div class="arrow"></div>
+        </button>
+      </div>
+      <div class="body">
+        <div class="single-info-container">
+          <span>Model author:</span>
+          <span class="author"></span>
+        </div>
+        <div class="single-info-container">
+          <span>Link to original model:</span>
+          <a class="link" href="" target="_blank">click here</a>
+        </div>
+      </div>
+      <div class="footer"></div> -->
+    </div>
+  </body>
+</html>
