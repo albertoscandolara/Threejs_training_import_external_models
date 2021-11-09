@@ -1,10 +1,16 @@
 import "./styles/scss/index.scss";
 
-import * as PIRATEISLANDCARGOBAY from "./js/models/Pirate Island - Cargo Bay/main.mjs";
+import * as PIRATEISLANDCARGOBAYNODIRECTIONALLIGHT from "./js/models/Pirate Island - Cargo Bay no directional light/main.mjs";
+import * as PIRATEISLANDCARGOBAYTWODIRECTIONALLIGHTS from "./js/models/Pirate Island - Cargo Bay two directional lights/main.mjs";
+import * as PIRATEISLANDCARGOBAYORIGINAL from "./js/models/Pirate Island - Cargo Bay original/main.mjs";
 import Label from "./js/Credits label/label.mjs";
 
 {
-  const imports = [PIRATEISLANDCARGOBAY];
+  const imports = [
+    PIRATEISLANDCARGOBAYNODIRECTIONALLIGHT,
+    PIRATEISLANDCARGOBAYTWODIRECTIONALLIGHTS,
+    PIRATEISLANDCARGOBAYORIGINAL,
+  ];
   const label = new Label();
 
   const setSelectOptions = function () {
@@ -34,7 +40,7 @@ import Label from "./js/Credits label/label.mjs";
     setCanvasContent(select.value);
   });
 
-  const selectValue = `Pirate Island - Cargo Bay`;
+  const selectValue = `Pirate Island - Cargo Bay - two directional lights`;
   select.value = selectValue;
   setCanvasContent(select.value);
 }
